@@ -1,5 +1,5 @@
 {
-    "name": "afilnet/afilnet_api",
+    "name": "afilnet/afilnet-api",
     "type": "library",
     "description": "PHP Library to use Afilet API",
     "license": "MIT",
