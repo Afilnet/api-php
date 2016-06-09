@@ -1,0 +1,20 @@
+{
+    "name": "afilnet/afilnet_api",
+    "type": "library",
+    "description": "PHP Library to use Afilet API",
+    "license": "MIT",
+    "keywords": ["afilnet", "api", "php", "sms", "voice", "email", "notification", "message", "cloud", "marketing", "hosting", "service"],
+    "authors": [
+        {
+            "name": "Afilnet Cloud Marketing",
+            "email": "soporte@afilnet.com",
+            "homepage": "https://www.afilnet.com"
+        }
+    ],
+	"require": {
+		"php": ">=5.3.3"
+	},
+	"autoload": {
+		"psr-4": {"Afilnet\\": "src/"}
+	}
+}
