@@ -81,7 +81,7 @@ class Voice extends Service
     public function sendToGroup($countryCode, $idGroup, $msg, $scheduledatetime = null, $output = null){
         $postFields = array(
             'class' => $this->class,
-            'method' => $this->methods["sendFromTemplate"],
+            'method' => $this->methods["sendToGroup"],
             'user' => $this->user,
             'password' => $this->pass,
             'countrycode' => $countryCode,
@@ -107,7 +107,7 @@ class Voice extends Service
     public function sendToGroupFromTemplate($countryCode, $idGroup, $idTemplate, $scheduledatetime = null, $output = null){
         $postFields = array(
             'class' => $this->class,
-            'method' => $this->methods["sendFromTemplate"],
+            'method' => $this->methods["sendToGroupFromTemplate"],
             'user' => $this->user,
             'password' => $this->pass,
             'countrycode' => $countryCode,

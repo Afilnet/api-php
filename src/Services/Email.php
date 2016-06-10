@@ -81,7 +81,7 @@ class Email extends Service
     public function sendToGroup($subject, $idGroup, $msg, $scheduledatetime = null, $output = null){
         $postFields = array(
             'class' => $this->class,
-            'method' => $this->methods["sendFromTemplate"],
+            'method' => $this->methods["sendToGroup"],
             'user' => $this->user,
             'password' => $this->pass,
             'subject' => $subject,
@@ -107,7 +107,7 @@ class Email extends Service
     public function sendToGroupFromTemplate($idGroup, $idTemplate, $scheduledatetime = null, $output = null){
         $postFields = array(
             'class' => $this->class,
-            'method' => $this->methods["sendFromTemplate"],
+            'method' => $this->methods["sendToGroupFromTemplate"],
             'user' => $this->user,
             'password' => $this->pass,
             'idgroup' => $idGroup,
