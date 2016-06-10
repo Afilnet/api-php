@@ -64,18 +64,22 @@ The first step is install the module, you can install it using composer or manua
 Composer: "[composer require afilnet/afilnet-api](https://packagist.org/packages/afilnet/afilnet-api)".
 Then create the object:
 
-```php <?php
-$afilnet = new Afilnet/Afilnet();
+```php 
+<?php
+$afilnet = new \Afilnet\Afilnet();
+?>
 ```
 
 Then login with your account (If you dont login successfully, all services will return error bad username or password).
 
-```php <?php
+```php 
+<?php
 if ($afilnet->login("username","password")){
     //You have logged in successfully
 } else {
     //Bad credentials, you must login to use the services
 }
+?>
 ```
 
 And now we are ready to use the services :)
@@ -95,8 +99,10 @@ There are 3 channels availables:
 - [Send Voice](#voice)
 
 This library use the structure: 
-```php <?php
+```php 
+<?php
 $afilnet->channel->service($params);
+?>
 ```
 
 The three channels have the same services:
@@ -113,7 +119,8 @@ The three channels have the same services:
 If you want to use SMS you only need to call the object sms and the service required.
 
 #### Services
-```php <?php
+```php 
+<?php
 //SEND
 $array = $afilnet->sms->send(
     'from',
@@ -153,12 +160,14 @@ $array = $afilnet->sms->sendToGroupFromTemplate(
 
 // GET DELIVERY STATUS
 $array = $afilnet->sms->getDeliveryStatus('idMessage');
+?>
 ```
 
 
 #### Example
 
-```php <?php
+```php 
+<?php
 $to = "34600000000";
 $message = "Hey Luke, I want to tell you something... I am your father.";
 $from = "Darth Vader";
@@ -174,6 +183,7 @@ if (result['status']=="SUCCESS"){
 } else { // == "ERROR"
     echo("I have not received any sms :(");
 }
+?>
 ```
 
 
@@ -188,7 +198,8 @@ If you want to send email you only need to call a function: sendEmail
 
 #### Services
 
-```php <?php
+```php 
+<?php
 //SEND
 $array = $afilnet->email->send(
     'subject',
@@ -226,11 +237,13 @@ $array = $afilnet->email->sendToGroupFromTemplate(
 
 // GET DELIVERY STATUS
 $array = $afilnet->email->getDeliveryStatus('idMessage');
+?>
 ```
 
 #### Example
 
-```php <?php
+```php 
+<?php
 $subject = "I have a surprise for you - Darth Vader";
 $to = "luke_skywalker@newjediorder.com";
 $message = "<h2>I am your father.</h2><hr><p>Hehehe surprise.</p><p>Best wishes, Darth Vader.</p>";
@@ -246,6 +259,7 @@ if (result['status']=="SUCCESS"){
 } else { // == "ERROR"
     echo("I have not received any email :(");
 }
+?>
 ```
 
 
@@ -258,7 +272,8 @@ if (result['status']=="SUCCESS"){
 
 If you want to send voice you only need to call a function: sendVoice
 
-```php <?php
+```php 
+<?php
 //SEND
 $array = $afilnet->voice->send(
     'to', 
@@ -297,11 +312,13 @@ $array = $afilnet->voice->sendToGroupFromTemplate(
 
 // GET DELIVERY STATUS
 $array = $afilnet->voice->getDeliveryStatus('idMessage');
+?>
 ```
 
 #### Example
 
-```php <?php
+```php 
+<?php
 $to = "346000000";
 $message = "Hey Luke, I want to tell you something... I... am... your father.";
 $lang = "EN";
@@ -331,6 +348,7 @@ afilnet.sendEmail(
     },
     lang
 );
+?>
 ```
 
 [back to top](#index)
@@ -370,22 +388,26 @@ NO_CREDITS | Your balance is insufficient
 *Example for $afilnet->sms->send:
 
 - If everything is ok:
-```php <?php
-[
+```php 
+<?php
+$result = [
     "status" => "SUCCESS",
     "result" => [
         "messageid" => "id_from_message",
         "credits" => "credits_spent"
     ]    
 ]
+?>
 ```
 
 - If something went bad:
-```php <?php
-[
+```php 
+<?php
+$result = [
     "status" => "ERROR",
     "error" => "error_message"  
 ]
+?>
 ```
 
 
