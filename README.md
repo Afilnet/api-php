@@ -194,7 +194,7 @@ if (result['status']=="SUCCESS"){
 
 ### Email
 
-If you want to send email you only need to call a function: sendEmail
+If you want to use Email you only need to call the object sms and the service required.
 
 #### Services
 
@@ -270,7 +270,9 @@ if (result['status']=="SUCCESS"){
 
 ### Voice
 
-If you want to send voice you only need to call a function: sendVoice
+If you want to use Voice you only need to call the object sms and the service required.
+
+#### Services
 
 ```php 
 <?php
