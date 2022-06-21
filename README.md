@@ -49,7 +49,7 @@ We are available in 3 different languages:
 
 ## Setup
 
-**ATTENTION: You need an Afilet account with credits to use this module**
+**ATTENTION: You need an Afilnet account with credits to use this module**
 
 *If you dont have an account, [visit our web page](#website) and create it.*
 
