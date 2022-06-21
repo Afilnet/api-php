@@ -37,10 +37,9 @@ If you notice some error or bugs, feel free to contact us.
 
 ### Website
 We are available in 3 different languages:
-- [Español - www.afilnet.com](http://www.afilnet.com/) 
-- [English - www.afilnet.us](http://www.afilnet.us/) 
-- [English - www.afilnet.co.uk](http://www.afilnet.co.uk/) 
-- [Français - www.afilnet.fr](http://www.afilnet.fr/) 
+- [Español - www.afilnet.com](https://www.afilnet.com/) 
+- [English - www.afilnet.com/en/](https://www.afilnet.com/en/) 
+- [Français - www.afilnet.com/fr/](https://www.afilnet.com/fr/) 
 
 
 [back to top](#index)
