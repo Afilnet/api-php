@@ -7,7 +7,7 @@ This library is designed to be an easy way to use Afilnet API services. You can 
 This package can be installed with composer using "[composer require afilnet/afilnet-api](https://packagist.org/packages/afilnet/afilnet-api)".
 
 You only need an Afilnet account with enought credits.
-If you do not have an account, you can [create it](http://afilnet.us/client/register.php) in a few minutes.
+If you do not have an account, you can create an account in our website in a few minutes.
 
 ## Index
 
